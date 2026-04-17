@@ -1,0 +1,39 @@
+.usuarios-container {
+  padding: 2rem;
+  width: 100%;
+  text-align: left;
+}
+
+.usuarios-container h2 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  text-align: left;
+}
+
+.usuarios-container p {
+  text-align: left;
+}
+
+.usuarios-table-wrapper {
+  width: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.usuarios-table-wrapper table {
+  width: 100%;
+  margin-bottom: 0;
+  text-align: left;
+}
+
+.usuarios-table-wrapper thead tr th {
+  padding: 1rem 1.5rem;
+  text-align: left;
+}
+
+.usuarios-table-wrapper tbody tr td {
+  padding: 0.85rem 1.5rem;
+  vertical-align: middle;
+  text-align: left;
+}
