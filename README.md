@@ -52,6 +52,7 @@ y transiciones animadas entre páginas.
 
 ## Estructura del proyecto
 
+```
 admin-panel/
 ├── public/
 │   └── Logo.png
@@ -75,7 +76,7 @@ admin-panel/
 │   └── index.css
 ├── index.html
 └── README.md
-
+```
 
 ## Profesor
 
