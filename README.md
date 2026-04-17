@@ -78,6 +78,12 @@ admin-panel/
 └── README.md
 ```
 
+## Autor
+
+| Nombre | Código |
+|--------|--------|
+| Thomas Pérez | 2221906 |
+
 ## Profesor
 
 Carlos Adolfo Beltrán Castro
