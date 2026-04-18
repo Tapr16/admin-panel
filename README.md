@@ -61,7 +61,7 @@ admin-panel/
 │   │   ├── Navbar.jsx
 │   │   ├── Sidebar.jsx
 │   │   ├── Sidebar.css
-│   │   └── PageTransition.jsx
+│   │   └── PageTransition.jsxs
 │   ├── pages/
 │   │   ├── Login.jsx
 │   │   ├── Clientes.jsx
@@ -77,6 +77,15 @@ admin-panel/
 ├── index.html
 └── README.md
 ```
+
+## Capturas de pantalla
+
+### Login
+![Login](public/captura-login.png)
+
+### Panel principal
+![Panel](public/captura-panel.png)
+
 
 ## Autor
 

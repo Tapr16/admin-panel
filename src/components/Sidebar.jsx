@@ -1,19 +1,23 @@
-import { NavLink, useNavigate } from 'react-router-dom'
-import './Sidebar.css'
+import { NavLink, useNavigate } from "react-router-dom";
+import "./Sidebar.css";
 
 function Sidebar({ setIsAuthenticated }) {
-  const navigate = useNavigate()
+  const navigate = useNavigate();
 
   function handleLogout() {
-    setIsAuthenticated(false)
-    navigate('/login')
+    setIsAuthenticated(false);
+    navigate("/login");
   }
 
   return (
     <div className="sidebar">
       {/* Logo */}
       <div className="sidebar-logo">
-        <img src="/Logo.png" alt="AdminPanel Logo" className="sidebar-logo-img" />
+        <img
+          src="/Logo.png"
+          alt="AdminPanel Logo"
+          className="sidebar-logo-img"
+        />
         <h5 className="sidebar-title">AdminPanel</h5>
         <small className="sidebar-subtitle">UIS - 2026</small>
       </div>
@@ -25,8 +29,20 @@ function Sidebar({ setIsAuthenticated }) {
         <ul>
           <li>
             <NavLink
+              to="/dashboard"
+              className={({ isActive }) =>
+                "sidebar-link" + (isActive ? " active" : "")
+              }
+            >
+              📊 Dashboard
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
               to="/clientes"
-              className={({ isActive }) => 'sidebar-link' + (isActive ? ' active' : '')}
+              className={({ isActive }) =>
+                "sidebar-link" + (isActive ? " active" : "")
+              }
             >
               👥 Clientes
             </NavLink>
@@ -34,7 +50,9 @@ function Sidebar({ setIsAuthenticated }) {
           <li>
             <NavLink
               to="/proveedor"
-              className={({ isActive }) => 'sidebar-link' + (isActive ? ' active' : '')}
+              className={({ isActive }) =>
+                "sidebar-link" + (isActive ? " active" : "")
+              }
             >
               🏭 Proveedor
             </NavLink>
@@ -42,7 +60,9 @@ function Sidebar({ setIsAuthenticated }) {
           <li>
             <NavLink
               to="/usuarios"
-              className={({ isActive }) => 'sidebar-link' + (isActive ? ' active' : '')}
+              className={({ isActive }) =>
+                "sidebar-link" + (isActive ? " active" : "")
+              }
             >
               🔑 Usuarios
             </NavLink>
@@ -59,7 +79,7 @@ function Sidebar({ setIsAuthenticated }) {
         </button>
       </div>
     </div>
-  )
+  );
 }
 
-export default Sidebar
+export default Sidebar;
